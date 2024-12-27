@@ -14,8 +14,8 @@
         <button type="submit" name="theme" value="dark" class="btn-yellow:hover">{{'Темная тема' if lang == 'ru' else 'Dark theme'}}</button>
       </form>
         <form method="POST" action="{{ url_for('switch_language') }}">
-          <button name="submit" value="ru" class="btn-yellow">{{ 'Русский' if lang == 'en' else 'Russian' }}</button>
-          <button name="submit" value="en" class="btn-yellow">{{ 'English' if lang == 'ru' else 'Английский' }}</button>
+          <button name="lang" value="ru" class="btn-yellow">{{ 'Русский' if lang == 'en' else 'Russian' }}</button>
+          <button name="lang" value="en" class="btn-yellow">{{ 'English' if lang == 'ru' else 'Английский' }}</button>
       </form>
     </div>
 
